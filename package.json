@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-principal",
+  "version": "1.0.0",
+  "description": "Um portfólio pessoal para exibir projetos e informações sobre mim.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "npm run build"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
