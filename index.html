@@ -1,27 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/styles/main.css" />
-  
+
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  />
-  
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     <title>Dennis Emannuel | Self-DEV</title>
+    <meta
+      name="description"
+      content="Portfólio de Dennis Emmanuel, Desenvolvedor Frontend especializado em HTML, CSS, JavaScript, React e TypeScript" />
+    <meta
+      name="keywords"
+      content="Desenvolvedor Frontend, HTML, CSS, JavaScript, React, TypeScript, Portfolio" />
+    <meta name="author" content="Dennis Emmanuel" />
+    <link rel="canonical" href="https://seudominio.com" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dennis Emmanuel | Self-DEV" />
+    <meta
+      property="og:description"
+      content="Portfólio de Dennis Emmanuel, Desenvolvedor Frontend" />
+    <meta
+      property="og:image"
+      content="https://seudominio.com/assets/images/profile.jpg" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Dennis Emmanuel | Self-DEV" />
+    <meta
+      property="twitter:description"
+      content="Portfólio de Dennis Emmanuel, Desenvolvedor Frontend" />
+    <meta
+      property="twitter:image"
+      content="https://seudominio.com/assets/images/profile.jpg" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preload" href="../assets/styles/main.css" as="style" />
+    <link rel="preload" href="../assets/scripts/main.js" as="script" />
   </head>
   <body>
     <div class="matrix-bg"></div>
     <header class="tech-header">
       <div class="logo">
-        <span class="tech-text">Self-DEV</span>
+        <span class="tech-text" aria-label="Self-DEV">Self-DEV</span>
       </div>
-      <button class="menu-toggle" aria-label="Menu">
-        <i class="fas fa-bars"></i>
+      <button class="menu-toggle" aria-label="Abrir menu de navegação">
+        <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <nav class="cyber-nav">
+      <nav class="cyber-nav" aria-label="Navegação principal">
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
@@ -31,14 +59,20 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" aria-labelledby="hero-heading">
         <div class="profile-container">
           <div class="profile-image mobile-profile">
-            <img src="../assets/images/profile.jpg" alt="Dennis Emmanuel" />
+            <img
+              src="../assets/images/profile.jpg"
+              alt="Foto de perfil de Dennis Emmanuel"
+              loading="lazy" />
             <div class="profile-frame"></div>
           </div>
           <div class="profile-info">
-            <div class="name-container mobile-name">
+            <div
+              class="name-container mobile-name"
+              role="heading"
+              aria-level="1">
               <span class="code-decoration">{</span>
               <h1 class="glitch-title" data-text="Dennis Emannuel">
                 Dennis Emannuel
@@ -55,6 +89,7 @@
               <a
                 href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="tech-item"
                 data-tech="HTML"
                 >HTML</a
@@ -113,6 +148,34 @@
         </div>
       </div>
     </footer>
+    <nav class="mobile-nav">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fas fa-home"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="fas fa-user"></i>
+            <span>Sobre</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="fas fa-code"></i>
+            <span>Projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="fas fa-envelope"></i>
+            <span>Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <script src="../assets/scripts/main.js"></script>
   </body>
 </html>

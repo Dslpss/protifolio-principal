@@ -7,6 +7,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+      rel="stylesheet" />
     <title>Projetos | Dennis Emannuel</title>
   </head>
   <body>
@@ -38,26 +41,46 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
-              <img src="../assets/images/img.jpg" alt="Projeto 1" />
+              <a
+                href="../assets/images/projeto1.png"
+                class="project-image-link"
+                data-lightbox="villa-croissant"
+                data-title="Villa Croissant">
+                <img
+                  src="../assets/images/projeto1.png"
+                  alt="Villa Croissant - Sistema de Restaurante"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                  title="Clique para ampliar" />
+              </a>
               <div class="project-overlay">
                 <div class="project-tech">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Firebase</span>
+                  <span>Node.js</span>
                 </div>
               </div>
             </div>
             <div class="project-info">
-              <h2>Nome do Projeto</h2>
+              <h2>Villa Croissant</h2>
               <p>
-                Descrição detalhada do projeto e suas principais
-                funcionalidades. Tecnologias utilizadas e desafios superados.
+                Sistema completo para restaurantes com cadastro de usuários,
+                autenticação, cardápio digital e gerenciamento de pedidos.
+                Desenvolvido com React.js no frontend e Firebase como banco de
+                dados.
               </p>
               <div class="project-links">
-                <a href="#" class="cyber-btn" target="_blank"
+                <a
+                  href="https://lanchoneteja.netlify.app/"
+                  class="cyber-btn"
+                  target="_blank"
                   ><i class="fas fa-globe"></i> Live Demo</a
                 >
-                <a href="#" class="cyber-btn" target="_blank"
+                <a
+                  href="https://github.com/Dslpss/lanchonete-gourmet"
+                  class="cyber-btn"
+                  target="_blank"
                   ><i class="fab fa-github"></i> GitHub</a
                 >
               </div>
@@ -117,5 +140,54 @@
     </footer>
 
     <script src="../assets/scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+        alwaysShowNavOnTouchDevices: true,
+        disableScrolling: true,
+        fadeDuration: 300,
+      });
+    </script>
+    <a
+      href="../assets/images/projeto1-2.png"
+      data-lightbox="villa-croissant"
+      data-title="Tela de Login do Villa Croissant"
+      style="display: none"></a>
+    <a
+      href="../assets/images/projeto1-3.png"
+      data-lightbox="villa-croissant"
+      data-title="Cardápio Digital"
+      style="display: none"></a>
+
+    <nav class="mobile-nav">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fas fa-home"></i>
+            <span>Início</span>
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            <i class="fas fa-user"></i>
+            <span>Sobre</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="fas fa-code"></i>
+            <span>Projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="fas fa-envelope"></i>
+            <span>Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
